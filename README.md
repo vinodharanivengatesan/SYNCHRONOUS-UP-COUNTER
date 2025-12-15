@@ -27,8 +27,29 @@ The next flip-flop need only “recognize” that the first flip-flop’s Q outp
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
 **Procedure**
+**UP COUNTER**
 
-/* write all the steps invloved */
+1. Open Quartus Prime and create a new project for the 4-bit synchronous up counter.
+2. Write the Verilog HDL code using four JK flip-flops with a common clock input.
+3. Connect J and K of the LSB flip-flop to logic 1 so it toggles on every clock pulse.
+4. Configure the remaining flip-flops so they toggle only when all lower-order Q outputs are high.
+5. Compile the design and check for errors.
+6. Simulate the circuit and observe the count sequence using the timing diagram.
+7. Verify the output values with the truth table to confirm correct up-counting operation.
+
+**DOWN COUNTER**
+
+1. Open Quartus Prime and create a new new project for the down counter.
+2. Create a Verilog HDL file and define the module with clock and reset inputs and a multi-bit output.
+3. Write the always block triggered on the positive edge of the clock.
+4. Apply reset logic to initialize the counter output to its maximum value.
+5. On every clock pulse, decrement the counter value by one when reset is inactive.
+6. Compile the design and correct any compilation errors.
+7. Simulate the circuit using the Simulation Waveform Editor.
+8. Observe the output counting sequence in the timing diagram.
+9. Verify the results using the truth table to confirm correct down-counting operation.   
+
+
 
 **PROGRAM**
 
@@ -38,11 +59,28 @@ Developed by: RegisterNumber: 25015399
 
 
 **RTL LOGIC UP COUNTER**
-<img width="1382" height="772" alt="image" src="https://github.com/user-attachments/assets/1385b80d-ea6b-4baa-afb7-f6b6bb684fb0" />
+UP COUNTER:
+![UP LOGIC](https://github.com/user-attachments/assets/b21bf500-062a-4a14-a9cb-c7f32be066e1)
+
+DOWN COUNTER:
+![LOGIC DOWN](https://github.com/user-attachments/assets/5594fba9-a83d-45c2-a03a-7f11d4c3ed14)
 
 
-**TIMING DIAGRAM FOR IP COUNTER**
-<img width="1157" height="697" alt="image" src="https://github.com/user-attachments/assets/515467e9-a50c-4e8a-bf0f-54614fb50125" />
+**TIMING DIAGRAM FOR  COUNTER**
+UP COUNTER:
+
+![T UP](https://github.com/user-attachments/assets/1aafacdb-2705-4867-8f0b-61fc1f7394f7)
+
+DOWN COUNTER:
+![down td](https://github.com/user-attachments/assets/729a8781-cd15-4512-94a7-681465d7365b
+
+
+TRUTH TABLE
+UP COUNTER:
+![UP TT](https://github.com/user-attachments/assets/6cbdb288-e274-4698-bfb0-2da97bf8de22)
+
+DOWN COUNTER:
+![down tt](https://github.com/user-attachments/assets/a6f5a2f5-a2bb-4180-b8b4-2db6559372b4)
 
 **RESULTS** 
 Thus the SYNCHRONOUS-UP-COUNTER are designed and the truth tables is verified using Quartus software.
