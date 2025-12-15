@@ -27,20 +27,64 @@ The next flip-flop need only “recognize” that the first flip-flop’s Q outp
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
 **Procedure**
+**UP COUNTER**
 
-/* write all the steps invloved */
+1. Open Quartus Prime and create a new project for the 4-bit synchronous up counter.
+2. Write the Verilog HDL code using four JK flip-flops with a common clock input.
+3. Connect J and K of the LSB flip-flop to logic 1 so it toggles on every clock pulse.
+4. Configure the remaining flip-flops so they toggle only when all lower-order Q outputs are high.
+5. Compile the design and check for errors.
+6. Simulate the circuit and observe the count sequence using the timing diagram.
+7. Verify the output values with the truth table to confirm correct up-counting operation.
+
+**DOWN COUNTER**
+
+1. Open Quartus Prime and create a new new project for the down counter.
+2. Create a Verilog HDL file and define the module with clock and reset inputs and a multi-bit output.
+3. Write the always block triggered on the positive edge of the clock.
+4. Apply reset logic to initialize the counter output to its maximum value.
+5. On every clock pulse, decrement the counter value by one when reset is inactive.
+6. Compile the design and correct any compilation errors.
+7. Simulate the circuit using the Simulation Waveform Editor.
+8. Observe the output counting sequence in the timing diagram.
+9. Verify the results using the truth table to confirm correct down-counting operation.   
 
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
 Developed by: RegisterNumber:
-*/
+25015399
 
-**RTL LOGIC UP COUNTER**
+**RTL LOGIC COUNTER**
+UP COUNTER:
+![UP LOGIC](https://github.com/user-attachments/assets/64dcd6e4-6ca1-4b59-9365-b33d3dd61a84)
 
-**TIMING DIAGRAM FOR IP COUNTER**
+
+DOWN COUNTER:
+![LOGIC DOWN](https://github.com/user-attachments/assets/dc86f055-27eb-4610-9083-598d3c61c572)
+
+
+
+**TIMING DIAGRAM FOR COUNTER**
+UP COUNTER:
+![T UP](https://github.com/user-attachments/assets/14897e89-a9f1-4841-b75d-43d0739f3288)
+
+DOWN COUNTER:
+![down td](https://github.com/user-attachments/assets/bd04d932-1f25-404a-a63a-2d5215f3ce05)
+
+
+
 
 **TRUTH TABLE**
+UP COUNTER:
+![UP TT](https://github.com/user-attachments/assets/b8e3314e-c270-489e-8e6b-69a68bb13ab4)
+
+DOWN COUNTER:
+![down tt](https://github.com/user-attachments/assets/44b441e2-e140-43ea-a379-60319d3a2620)
+
+
+
 
 **RESULTS**
+The 4-bit synchronous up counter was successfully implemented and simulated in Quartus Prime. The counter increments its output from 0000 to 1111 on each clock pulse without ripple delay, confirming correct synchronous operation.
