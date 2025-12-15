@@ -72,7 +72,8 @@ UP COUNTER:
 ![T UP](https://github.com/user-attachments/assets/1aafacdb-2705-4867-8f0b-61fc1f7394f7)
 
 DOWN COUNTER:
-![down td](https://github.com/user-attachments/assets/729a8781-cd15-4512-94a7-681465d7365b
+![down td](https://github.com/user-attachments/assets/73dfa209-4679-428f-a8f5-e1e7a83038f8)
+
 
 
 TRUTH TABLE
